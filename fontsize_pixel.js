@@ -32,7 +32,7 @@ $(document).ready(function () {
                     function (size) {
                         editor.execCommand('fontsize', size);
                         var getBody = editor.getBody();
-                        $(getBody).find('font[size]').removeAttr("size").css("font-size", size + "px");
+                        $(getBody).find('font[size]').removeAttr("size").css("font-size", size + "px").css("line-height", size + "px");
                     }
                 );
             },
